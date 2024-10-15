@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Contêiner principal que contém o vídeo e a legenda lado a lado */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Configurações da área do vídeo */
+.video-container {
+    width: 50%; /* O vídeo ocupa metade da largura */
+    margin-right: 20px; /* Espaço entre o vídeo e a legenda */
+}
+
+#video-stream {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+/* Configurações da área da legenda */
+.caption-box {
+    width: 40%; /* A legenda ocupa 40% da largura */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto; /* Adiciona barra de rolagem quando o texto exceder a altura */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
